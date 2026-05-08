@@ -40,13 +40,15 @@ export function AuthProvider({ children }) {
         return u;
       },
       async register(payload) {
-        const { user: u, accessToken } = await authApi.register(payload);
-         console.log("REGISTER RESPONSE:", data);
+  const { user: u, accessToken } = await authApi.register(payload);
 
-        setAccessToken(accessToken);
-        setUser(u);
-        return u;
-      },
+  console.log("REGISTER RESPONSE:", { user: u, accessToken });
+
+  setAccessToken(accessToken);
+  setUser(u);
+
+  return u;
+},
       async logout() {
         try {
           await authApi.logout();
