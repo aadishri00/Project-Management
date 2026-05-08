@@ -1,4 +1,4 @@
-# Pulse — MERN Project Management App
+# Tasksprint — MERN Project Management App
 
 A full-stack project & task management tool built on the MERN stack with role-based
 access control, a Kanban board, dashboards with charts, and a polished, responsive UI.
