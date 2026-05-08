@@ -41,6 +41,8 @@ export function AuthProvider({ children }) {
       },
       async register(payload) {
         const { user: u, accessToken } = await authApi.register(payload);
+         console.log("REGISTER RESPONSE:", data);
+
         setAccessToken(accessToken);
         setUser(u);
         return u;
