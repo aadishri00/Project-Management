@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview":"vite preview --host 0.0.0.0 --port$PORT",
-    "start": "vite preview --host 0.0.0.0 --port$PORT"
+    "start": "serve -s dist -| $PORT"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -22,6 +21,7 @@
     "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.26.2",
     "recharts": "^2.12.7",
+    "serve": "^14.2.6",
     "tailwind-merge": "^2.5.2",
     "zod": "^3.23.8"
   },
